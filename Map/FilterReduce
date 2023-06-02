@@ -1,0 +1,43 @@
+Filter
+
+const fruits = ["apple", "banana", "grapes", "mango", "orange"];
+
+function filterItems(arr, query) {
+   const ans= arr.filter((el) => {
+    
+     return el.toLowerCase().includes(query.toLowerCase());
+  
+  })
+  return ans;
+}
+
+
+Get Max
+
+in accumulator if value is given then it will take that value else it will take arr[0]
+current values it will take arr[0] but if initial value is not given in that case it will take arr[1]
+index if initial value is given then 0 else 1 
+function return value becomes the value of the accumulator
+const array1 = [11, 2, 13, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+let comp = Number.MIN_SAFE_INTEGER;
+const sumWithInitial = array1.reduce(
+  (accumulator, currentValue) =>{
+    
+ const max =  currentValue;
+  
+    
+    if(comp < max){
+    comp = max;
+  }
+     return comp;
+  },
+  initialValue
+);
+
+console.log(sumWithInitial);
+
+tiotal emploo 3,5,6 in all count
+
